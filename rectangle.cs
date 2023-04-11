@@ -22,7 +22,9 @@ using System.Text;
 
     public virtual void CheckPointsOnErrors(point a, point b, screen screen1, string detailName)
     {
-        if (ClassError.CheckPoints(new point[] { a, b }, screen1, detailName) || ClassError.CheckParameters(new point(a.x + 1, a.y + 1), b, detailName, "\r\nКоординаты первой точки должны быть меньше координат второй."))
+        if (ClassError.CheckPoints(new point[] { a, b }, screen1, detailName)
+        || ClassError.CheckParameters(new point(a.x + 1, a.y + 1), b, detailName, 
+        "\r\nКоординаты первой точки должны быть меньше координат второй."))
         {
             addInDrawList = false;
         }
