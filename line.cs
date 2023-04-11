@@ -10,7 +10,8 @@ using System.Xml.Linq;
     point w, e;
     screen screen1;
 
-    public override point north() { return new point(e.x<w.x ? e.x+(w.x - e.x) / 2 : w.x + (e.x - w.x) / 2, e.y < w.y ? w.y : e.y); }
+    public override point north() 
+    { return new point(e.x<w.x ? e.x+(w.x - e.x) / 2 : w.x + (e.x - w.x) / 2, e.y < w.y ? w.y : e.y); }
     public override point south() { return new point(e.x+(w.x-e.x)/2, e.y<w.y?e.y:w.y); } 
 
     public line(point a, point b, screen screen, string name)
