@@ -31,7 +31,7 @@ using System.Text;
     private static void CreateShapes(screen screen)
     {
         face = new myshape(new point(15, 10), new point(27, 20), screen, "лицо");
-        hat = new rectangle(new point(0, 0), new point(14, 5), screen, "шляпа");
+        hat = new rectangle(new point(0, 0), new point(-14, 5), screen, "шляпа");
         brim = new line(new point(0, 15), 17, screen, "поле шляпы");
         earOne= new parallelogram(new point(0, 0), new point(7, 4),6, screen, "ухо1");
         earTwo = new parallelogram(new point(0, 0), new point(7, 4), 6, screen, "ухо2");
