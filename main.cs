@@ -44,6 +44,7 @@ using System.Text;
         face.resize(2);
         face.move(20, 5); 
         earTwo.flip_horisontally();
+        earTwo.flip_horisontally();
         feathers1.rotate_left();
 
     }
